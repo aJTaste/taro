@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      href="https://www.gstatic.com/images/branding/searchlogo/ico/favicon.ico"
+      sizes="any"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=expand_content"
+    />
+    <title>HTML変換ツール</title>
+  </head>
+
+  <body>
+    <header>
+      <p class="page-title">HTML変換ツール</p>
+    </header>
+    <main>
+      <div class="action">
+        <button id="open_newtab">新しいタブで開く</button>
+        <button id="import_file">ファイルを選択</button>
+        <input
+          type="file"
+          id="input_file"
+          style="display: none"
+          accept=".html,.htm"
+        />
+        <span class="notbtn" id="file_name">選択されていません</span>
+        <button id="import_cb">クリップボードから貼り付け</button>
+      </div>
+      <div class="editor">
+        <div class="input wrap_put">
+          <p class="put_text">入力</p>
+          <textarea
+            id="input_html"
+            class="put"
+            placeholder="ここにHTMLを入力してください…"
+          ></textarea>
+        </div>
+        <div class="output wrap_put">
+          <p class="put_text">出力</p>
+          <div class="outwrap">
+            <iframe
+              id="output_html"
+              class="put"
+              sandbox="allow-scripts"
+            ></iframe>
+            <span id="expand_btn" class="material-symbols-outlined">
+              expand_content
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

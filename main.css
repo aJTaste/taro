@@ -1,0 +1,140 @@
+.material-symbols-outlined {
+  color: rgba(50, 50, 50, 0.7);
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: #24292f;
+}
+
+body {
+  height: 100vh;
+  background-color: #f4f7f6;
+}
+
+header {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+main {
+  height: 80%;
+  width: 90%;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid #222;
+}
+
+.action {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.action button {
+  margin: 16px;
+  font-size: 16px;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: #88d;
+  color: white;
+  transition: transform 0.1s ease;
+}
+
+.action button:hover {
+  background-color: #99e;
+  transform: scale(1.05);
+}
+
+.action button:active {
+  background-color: #77c;
+  transform: scale(0.95);
+}
+
+#file_name {
+  font-size: 14px;
+}
+
+.editor {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+.put {
+  border: 1px solid #aaa;
+  width: 100%;
+  height: 90%;
+}
+
+.put_text {
+  padding: 4px;
+  padding-left: 14px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  box-sizing: content-box;
+  background-color: #eee;
+}
+
+.wrap_put {
+  width: 50%;
+  margin: 10px;
+}
+
+#input_html {
+  resize: none;
+  font-size: 16px;
+  padding: 14px;
+  background-color: #222;
+  color: #00dd00;
+  font-family: "JetBrains Mono", "Consolas", "BIZ UDゴシック", monospace;
+}
+
+#input_html::placeholder {
+  color: #ddd;
+}
+
+.outwrap {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+.outwrap #output_html {
+  width: 100%;
+  height: 100%;
+}
+
+#expand_btn {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  z-index: 10;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease;
+  transition: transform 0.1s ease;
+  font-size: 30px;
+  background-color: rgba(100, 100, 100, 0.7);
+  color: #fff;
+}
+
+#expand_btn:hover {
+  transform: scale(1.1);
+}
+
+#expand_btn:active {
+  transform: scale(0.9);
+}
